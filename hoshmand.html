@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login and registering hoshmand</title>
+
+<link rel="stylesheet" type="text/css" href="projectfinal.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			<form class="registering-form" action="connectiondb.php" method="POST" >
+
+				<input type="text" placeholder="username" required name="username">
+		        <input type="password" placeholder="password" required name="password">
+				<input type="email" placeholder="email " name ="email">
+				<input type="text" placeholder="phonenumber" required name="phonenumber">
+				
+				<button >sign up</button>
+				<div class="text-center1">
+					<a href="#" class="logintxt"  >
+						login
+					</a>
+				</div>
+
+				
+			</form>
+
+			<form class="login">
+
+				<input type="text" placeholder="user name" required>
+		        <input type="password" placeholder="password"required>
+		        <div class="text-center1">
+					<a href="#" class="txt">
+						Forget password
+					</a>
+				</div>
+		        <button>login</button>
+
+            
+            
+			
+
+				<div class="text-center1">
+					<a href="#" class="txt">
+						Sign Up
+					</a>
+				</div>
+              </form>
+
+
+   
+
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script>
+
+     	$('.txt').click(function(){
+     		$('.login').hide();
+     	$('.registering-form').animate({height:"toggle" , opacity:"toggle"} , "slow");
+     	});
+
+     	$('.logintxt').click(function(){
+     		$('.registering-form').hide();
+     	$('.login').animate({height:"toggle" , opacity:"toggle"} , "slow");
+     	});
+
+
+
+     </script>
+		
+
+</body>
+</html>
